@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1_ClickMeBtn", "Task1_ClickMeBtn\Task1_ClickMeBtn.csproj", "{33FEE04D-AE7E-40D8-B37D-9E5507A2CFC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{D84D1E7D-3CE3-4D86-B88C-C03A0F0E2B95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Old_Calculator", "Old_Calculator", "{BD225356-9658-45A1-9E6A-25A24F8FD74D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day02", "..\..\..\..\ITI materials\WPF\Day02\Day02\Day02\Day02.csproj", "{8435F66F-F4A4-4985-8360-7E8922D86A36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "..\..\..\C#\Day10\Lab10_calculator\Calculator\Calculator.csproj", "{B16B3E3D-51BE-4A72-8A8D-7909F016E07F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2_imgToolTip", "Task2_imgToolTip\Task2_imgToolTip.csproj", "{28D0D4DA-8E2F-4861-8DE9-7474E9D4268B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task3_Calculator", "Task3_Calculator\Task3_Calculator.csproj", "{4A850FA5-5EB0-4315-B448-EEE22EB86833}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33FEE04D-AE7E-40D8-B37D-9E5507A2CFC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33FEE04D-AE7E-40D8-B37D-9E5507A2CFC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33FEE04D-AE7E-40D8-B37D-9E5507A2CFC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33FEE04D-AE7E-40D8-B37D-9E5507A2CFC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8435F66F-F4A4-4985-8360-7E8922D86A36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8435F66F-F4A4-4985-8360-7E8922D86A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8435F66F-F4A4-4985-8360-7E8922D86A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8435F66F-F4A4-4985-8360-7E8922D86A36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B16B3E3D-51BE-4A72-8A8D-7909F016E07F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B16B3E3D-51BE-4A72-8A8D-7909F016E07F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B16B3E3D-51BE-4A72-8A8D-7909F016E07F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B16B3E3D-51BE-4A72-8A8D-7909F016E07F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28D0D4DA-8E2F-4861-8DE9-7474E9D4268B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28D0D4DA-8E2F-4861-8DE9-7474E9D4268B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28D0D4DA-8E2F-4861-8DE9-7474E9D4268B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28D0D4DA-8E2F-4861-8DE9-7474E9D4268B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A850FA5-5EB0-4315-B448-EEE22EB86833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A850FA5-5EB0-4315-B448-EEE22EB86833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A850FA5-5EB0-4315-B448-EEE22EB86833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A850FA5-5EB0-4315-B448-EEE22EB86833}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8435F66F-F4A4-4985-8360-7E8922D86A36} = {D84D1E7D-3CE3-4D86-B88C-C03A0F0E2B95}
+		{B16B3E3D-51BE-4A72-8A8D-7909F016E07F} = {BD225356-9658-45A1-9E6A-25A24F8FD74D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DD24AA2-3C7A-474B-8575-6C122605949A}
+	EndGlobalSection
+EndGlobal
