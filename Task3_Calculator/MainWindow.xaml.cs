@@ -25,9 +25,13 @@ namespace Task3_Calculator
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
         }
+
+
+        #region DECLARING VARIABLE
 
         //Store the mathimatical expression in an ArrayList
         ArrayList calculatedExpression = new ArrayList();
@@ -41,6 +45,7 @@ namespace Task3_Calculator
         //Indicate the start of inputing a new number
         static int newNumber = 1;
 
+        #endregion
 
 
         //Function that triggered when pressing any number from (0-9)
@@ -57,7 +62,7 @@ namespace Task3_Calculator
             stringLength = resultTxt.Text.Length - lastAdded;
 
             //If the user input new number or the first number at all
-            //he could input decimal point like 0.num  to represent fraction
+            //he could input decimal point like '0.' num  to represent fraction
             if (btn.Content.ToString() == "." && newNumber == 1)
             {
                 resultTxt.Text += "0.";
@@ -79,6 +84,7 @@ namespace Task3_Calculator
 
         }
 
+
         //It is triggered every time the user input an operator to 
         //manage to input the decimal numbers and numbers more than
         // 9  as one item in array list
@@ -91,22 +97,32 @@ namespace Task3_Calculator
             calculatedExpression.Add(resultTxt.Text.Substring(lastAdded, stringLength));
         }
 
+
         private void operator_Click(object sender, EventArgs e)
         {
-
-            //CLEAR THE SCREEN 
-            check_To_ClearTheScreen();
+            //UnBox the clicked object to its original button object  type
+            Button btn = sender as Button;
 
             //CHECK TO WRITE OPERATOR
             if (resultTxt.Text == "" || resultTxt.Text == "0.")
                 return;
 
+            //CHECK IF THERE IS TWO OPERATORS 
+
+            //GET THE LENGTH OF STRING 
+            var lastChar = resultTxt.Text.Last();
+
+            bool isOperator = (lastChar == '+' || lastChar == '-' || lastChar == '*' || lastChar == '/');
+            
+            if (isOperator)
+                return;
+
+            //CLEAR THE SCREEN 
+            check_To_ClearTheScreen();
+           
             //Adding the number before operator to the array list
             addNumber();
-
-            //UnBox the clicked object to its original button object  type
-            Button btn = sender as Button;
-
+            
             //Adding the operator to the screan
             resultTxt.Text += btn.Content.ToString();
 
@@ -119,8 +135,6 @@ namespace Task3_Calculator
             //Starting new number to enter
             newNumber = 1;
         }
-
-
 
 
         private void Equal_Click(object sender, EventArgs e)
@@ -238,6 +252,7 @@ namespace Task3_Calculator
             lastAdded = 0;
         }
 
+
         private void Clear_Click(object sender, EventArgs e)
         {
             //Clearing the scree
@@ -253,11 +268,14 @@ namespace Task3_Calculator
             newNumber = 1; 
         }
 
+
+
         private void check_To_ClearTheScreen()
         {
             if (resultTxt.Text == "Can't Divide by Zero")
                 Clear_Click(new object (), new EventArgs());        
         }
+
     }
   }
 
