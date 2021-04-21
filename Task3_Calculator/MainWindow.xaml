@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Task3_Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="373" Width="302">
+        Title="Calculator" Height="373" Width="302">
 
     <Window.Resources>
         <Style TargetType="Button" >
